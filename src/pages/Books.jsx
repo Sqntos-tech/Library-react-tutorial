@@ -1,7 +1,7 @@
 import React from "react";
 import { books } from "../data";
 
-function Books() {
+const Books = () => {
   return (
     <div id="books__body">
       <main id="books__main">

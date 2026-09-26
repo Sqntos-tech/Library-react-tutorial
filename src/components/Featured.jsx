@@ -2,7 +2,7 @@ import React from "react";
 import Books from "./ui/Books";
 import { books } from '../data'
 
-function Featured() {
+const Featured = () => {
   return (
     <section id="features">
       <div className="container">

@@ -1,6 +1,7 @@
 import React from "react";
-import Books from "./ui/Books";
+import Book from "./ui/Books";
 import { books } from '../data'
+
 
 const Featured = () => {
   return (
@@ -15,7 +16,7 @@ const Featured = () => {
             .filter((book) => book.rating === 5)
             .slice(0,4)
             .map((book) => (
-                <Books book={book} key="books.id" />
+                <Book book={book} key="book.id" />
             ))};
           </div>
         </div>

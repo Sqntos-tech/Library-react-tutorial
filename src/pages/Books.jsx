@@ -1,8 +1,7 @@
 import React from "react";
 import { books } from "../data";
-import Book from "../components/ui/Books";
 
-const Books = () => {
+const Books = ({ books }) => {
   return (
     <div id="books__body">
       <main id="books__main">
@@ -19,7 +18,7 @@ const Books = () => {
                   </option>
                   <option value="LOW_TO_HIGH">Price, Low to High</option>
                   <option value="HIGH_TO_LOW">Price, High to Low</option>
-                  <option value="RATING">Rating</option>
+                  <option value="RASTING">Rating</option>
                 </select>
               </div>
               <div className="books">

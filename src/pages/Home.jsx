@@ -15,6 +15,6 @@ const Home = () => {
       <Explore />
     </>
   );
-}
+};
 
 export default Home;

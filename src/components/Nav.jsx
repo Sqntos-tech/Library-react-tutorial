@@ -29,7 +29,7 @@ const Nav = () => {
               Books
             </Link>
           </li>
-          <button className="btn__menu" onClick={openMenu}> 
+          <button className="btn__menu" onClick={openMenu}>
             <FontAwesomeIcon icon="bars" />
           </button>
           <li className="nav__icon">

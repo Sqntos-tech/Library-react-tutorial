@@ -22,6 +22,6 @@ const Discounted = () => {
       </div>
     </section>
   );
-}
+};
 
 export default Discounted;

@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import {
   BrowserRouter as Router,
   Route,
+  Routes,
 } from "react-router-dom/cjs/react-router-dom.min";
 import Home from "./pages/Home";
 import Books from "./pages/Books";
@@ -14,12 +15,11 @@ function App() {
     <Router>
       <div className="App">
         <Nav />
-        <Route path="/" exact component={Home} />
-        <Route path="/books" exact render={() => <Books books={books} />} />
-        <Route
-          path="/books/id"
-          render={() => <BookInfo books={books} />}
-        />
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/books" exact element={<Books books={books} />} />
+          <Route path="/books/id" element={<BookInfo books={books} />} />
+        </Routes>
         <Footer />
       </div>
     </Router>

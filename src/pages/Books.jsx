@@ -1,5 +1,5 @@
 import React from "react";
-import { books } from "../data";
+import Book from "../components/ui/Books";
 
 const Books = ({ books }) => {
   return (
@@ -18,7 +18,7 @@ const Books = ({ books }) => {
                   </option>
                   <option value="LOW_TO_HIGH">Price, Low to High</option>
                   <option value="HIGH_TO_LOW">Price, High to Low</option>
-                  <option value="RASTING">Rating</option>
+                  <option value="RATING">Rating</option>
                 </select>
               </div>
               <div className="books">

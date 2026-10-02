@@ -14,7 +14,7 @@ function App() {
   function addToCart(book) {
     setCart([...cart, book])
   }
-  
+
   useEffect(() => {
     console.log(cart);
   }, [cart]);

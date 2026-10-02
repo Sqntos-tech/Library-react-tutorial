@@ -55,7 +55,9 @@ const BookInfo = ({ books, addToCart, cart }) => {
                   </p>
                 </div>
                 {bookExistsOnCart() ? (
+                  <Link to={`/books/${book.id}`} className="book__link">
                   <button className="btn">Check Out</button>
+                  </Link>
                 ) : (
                   <button className="btn" onClick={() => addBookToCart(book)}>
                     Add to Cart

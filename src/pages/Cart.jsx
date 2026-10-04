@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import EmptyCart from "../assets/empty-cart.svg";
+import EmptyCart from "../assets/empty_cart.svg";
 import { Link } from "react-router-dom";
 
 const Cart = ({ cart, changeQuantity, removeItem }) => {
@@ -27,7 +27,7 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
               <div className="cart__body">
                 {cart.map((book) => {
                   return (
-                    <div className="cart__item">
+                    <div className="cart__item" key={book.id}> 
                       <div className="cart__book">
                         <img
                           src={book.url}
@@ -97,6 +97,7 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
                 </button>
               </div>
               )}
+            </div>
           </div>
         </div>
       </main>
